@@ -1,0 +1,131 @@
+name: Social Blue theme
+description: Demo theme for Open social installations.
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core_version_requirement: ^8.8 || ^9
+
+libraries:
+  - social_magi/brand
+  - social_magi/site-footer
+
+libraries-extend:
+  socialbase/base:
+    - social_magi/base
+  socialbase/alert:
+    - social_magi/alert
+  socialbase/badge:
+    - social_magi/badge
+  socialbase/button:
+    - social_magi/button
+  socialbase/cards:
+    - social_magi/cards
+  socialbase/form-controls:
+    - social_magi/form-controls
+  socialbase/list:
+    - social_magi/list
+  socialbase/spinner:
+    - social_magi/spinner
+  # Extend molecules
+  socialbase/block--informblock:
+    - social_magi/block--informblock
+  socialbase/breadcrumb:
+    - social_magi/breadcrumb
+  socialbase/dropdown:
+    - social_magi/dropdown
+  socialbase/file:
+      - social_magi/file
+  socialbase/form-elements:
+    - social_magi/form-elements
+  socialbase/form--input-groups:
+    - social_magi/form--input-groups
+  socialbase/like:
+    - social_magi/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - social_magi/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - social_magi/form--timepicker
+  socialbase/form--password:
+    - social_magi/form--password
+  socialbase/pagination:
+    - social_magi/pagination
+  socialbase/popover:
+    - social_magi/popover
+  socialbase/nav-book:
+    - social_magi/nav-book
+  socialbase/nav-tabs:
+    - social_magi/nav-tabs
+  socialbase/navbar:
+    - social_magi/navbar
+  socialbase/select2:
+    - social_magi/select2
+  socialbase/teaser:
+    - social_magi/teaser
+  socialbase/tour:
+    - social_magi/tour
+  # Extend Organisms
+  socialbase/comment:
+    - social_magi/comment
+  socialbase/hero:
+    - social_magi/hero
+  socialbase/message:
+    - social_magi/message
+  socialbase/meta:
+    - social_magi/meta
+  socialbase/modal:
+    - social_magi/modal
+  socialbase/offcanvas:
+    - social_magi/offcanvas
+  socialbase/stream:
+    - social_magi/stream
+  socialbase/page-node:
+    - social_magi/page-node
+  socialbase/layout:
+    - social_magi/layout
+
+ckeditor_stylesheets:
+  - assets/css/ckeditor.css
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  base:
+    paths:
+      - components/01-base
+  atoms:
+    paths:
+      - components/02-atoms
+  molecules:
+    paths:
+      - components/03-molecules
+  organisms:
+    paths:
+      - components/04-organisms
+  templates:
+    paths:
+      - components/05-templates
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer
+
+# Information added by Drupal.org packaging script on 2021-08-16
+version: '1.3.0'
+project: 'social_magi'
+datestamp: 1629127203
